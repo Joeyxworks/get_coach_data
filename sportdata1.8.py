@@ -35,8 +35,7 @@ def get_coach_data(filename):							#定义open_lol函数
 	except IOError as ioerr:
 		print('File error: ', +str(ioerr))
 		return(None)	
-
-
+	
 james = get_coach_data('james2.txt')
 julie = get_coach_data('julie2.txt')
 mikey = get_coach_data('mikey2.txt')
@@ -46,7 +45,3 @@ print(james.name + "'s fastest time are: " +str(james.top3()))
 print(julie.name + "'s fastest time are: " +str(julie.top3()))
 print(mikey.name + "'s fastest time are: " +str(mikey.top3()))
 print(sarah.name + "'s fastest time are: " +str(sarah.top3()))
-
-
-#james = add_time('2.21')
-#sarah = add_times('2.01', '1.91', '1.99')
